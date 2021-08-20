@@ -1,6 +1,6 @@
 PREFIX = .
 CC = cc
-CFLAGS = -Wall -O0 -g -I$(PREFIX)/include `pkg-config --cflags arcan-shmif`
+CFLAGS = -Wall -O2 -I$(PREFIX)/include `pkg-config --cflags arcan-shmif` `pkg-config --cflags arcan-shmif-tui`
 LDFLAGS = -L/usr/lib `pkg-config --libs arcan-shmif`
 
 all: apdf
